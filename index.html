@@ -32,10 +32,15 @@
 
 		<div id="game-field">
 
-
-
 			<div class="character">		
 					<img src="img/dragon.png" name="whichChar">						
+			</div>
+
+			<div class="game-footer">
+				<div id="run-away">You run away like a little girl!</div>
+				<div id="defeated">You have been deafeated by the dragon!</div>
+				<div id="victory">You have slain the Dragon!</div>
+				
 			</div>	
 		</div>		
 
@@ -56,17 +61,26 @@ function throwDice(){
 	document.images['myDie2'].src = imageName;
 	var totalRoll = randomDie + randomDie2
 	document.getElementById("damage").innerHTML = totalRoll;
+	if(totalRoll >= 9)	{
+		document.getElementById("victory").style.display = "block";
+	}else	{
+		document.getElementById("defeated").style.display = "block";
+	}
 }
 
 function timeToFlee(){
-
+	document.getElementById("defeated").style.display = "none";
+	document.getElementById("victory").style.display = "none";
 	document.images["whichChar"].src = "img/fleeing.png";
-	// Need to mock
+	document.getElementById("run-away").style.display = "block";
+	// document.getElementByName("fight").style.display = "none";
 }
 
 function timeToFight(){
 	document.getElementById("the-fight").style.display = "block";
 	document.getElementById("damage").style.display = "block";
+	document.getElementById("defeated").style.display = "none";
+	document.getElementById("victory").style.display = "none";
 }
 
 </script>
