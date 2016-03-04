@@ -1,0 +1,123 @@
+#game-wrapper{
+	width: 70%;
+	margin: auto;
+	border: 20px red;
+}
+
+#header{
+	background-color: red;
+	color: white;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 60px;
+	text-align: center;
+	padding: 10px;
+}
+
+#fight-flee{
+	background-color: #3399ff;
+	color: black;
+	width: 20%;
+	float: left;
+	font-size: 30px;
+	height: 712px;
+	text-align:  center;
+}
+
+#fight-flee img{
+	margin: 10px 0 10px 10px;
+}
+
+button{
+	background-color: black;
+	color: white;
+	font-size: 25px;
+	border-radius: 50%;
+	padding: 15px;
+	margin: 15px 0 15px 0;
+	position: relative;
+}
+
+
+button[name=fight]{
+	margin-top: 50px;
+	color: red;
+	
+}
+
+button[name=flee]{
+	color: #ff99ff;
+
+}
+
+#game-field{
+	float: left;
+	width: 79%;
+	height: 700px;
+	border: 6px solid black;
+}
+
+#instructions{
+	width: 80%;
+	font-size: 16px;
+	background-color: #fff2e6;
+	border-radius: 5px;
+	border: 1px solid black;
+	padding: 8px;
+	margin: auto;
+	margin-top: 30px
+}
+
+.character{
+	text-align: center;
+	margin-top: 10%;
+
+
+}
+
+#the-fight{
+	width: 80%;
+	background-color:  #fff2e6;
+	text-align: center;
+	display: none;
+	margin: auto;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+#damage{
+	width: 30%;
+	background-color:  #fff2e6;
+	text-align: center;
+	display: none;
+	margin: auto;
+	margin-top: 30px;
+	border-radius: 50%;
+	border: 5px solid black;
+	font-size: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
