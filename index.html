@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">	
 		<link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 
+
 </head>
 <body>
 	
@@ -45,45 +46,14 @@
 		</div>		
 
 	</div>
+	
+	<script type="text/javascript" src="scripts.js"></script>
 
 </body>
 </html>
 
 
-<script type="text/javascript">
 
-function throwDice(){
-	var randomDie = Math.round(Math.random() *5) +1;
-	var imageName = "img/d" + randomDie + ".gif";
-	document.images['myDie1'].src = imageName;
-	randomDie2 = Math.round(Math.random() *5) +1;
-	var imageName = "img/d" + randomDie2 + ".gif";
-	document.images['myDie2'].src = imageName;
-	var totalRoll = randomDie + randomDie2
-	document.getElementById("damage").innerHTML = totalRoll;
-	if(totalRoll >= 9)	{
-		document.getElementById("victory").style.display = "block";
-	}else	{
-		document.getElementById("defeated").style.display = "block";
-	}
-}
-
-function timeToFlee(){
-	document.getElementById("defeated").style.display = "none";
-	document.getElementById("victory").style.display = "none";
-	document.images["whichChar"].src = "img/fleeing.png";
-	document.getElementById("run-away").style.display = "block";
-	// document.getElementByName("fight").style.display = "none";
-}
-
-function timeToFight(){
-	document.getElementById("the-fight").style.display = "block";
-	document.getElementById("damage").style.display = "block";
-	document.getElementById("defeated").style.display = "none";
-	document.getElementById("victory").style.display = "none";
-}
-
-</script>
 
 
 
