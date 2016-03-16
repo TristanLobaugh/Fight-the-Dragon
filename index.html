@@ -3,52 +3,43 @@
 <head>
 	<title>Fight The Dragon</title>
 
-		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="css/style.css">	
 		<link href='https://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
 
 
 </head>
 <body>
-	
-	<div id="game-wrapper">
-		<div id="header">
-			<h1>Fight The Dragon!</h1>
-
-		</div>
-		<div id="fight-flee">
-
-			<button type="button" name="fight" onclick="timeToFight();">Fight!</button>
-			<p>or</p>
-			<button type="button" name="flee" onclick="timeToFlee();">Flee!</button>
-			<p id="instructions">If you choose to fight, you must roll a 9 or higher on the dice or the dragon will roast you!<p>
-			<div id="the-fight">
-					
-				<img src="img/d1.gif" name="myDie1">
-				<img src="img/d1.gif" name="myDie2">
-				<button type="button" name="throwDice" onclick="throwDice();">Click to Roll Dice</button>				
+	<div class="container">
+		<div id="game-wrapper col-xs-12 col-sm-12 col-md-10 col-md-offset-2">
+			<div id="header" class="col-xs-12 col-sm-12 col-md-12">
+				<h1>Fight The Dragon!</h1>
 			</div>
-			<div id="damage">0</div>
+				<div id="fight-flee" class="col-xs-4 col-sm-4 col-md-3">
+					<button type="button" name="fight" onclick="timeToFight();">Fight!</button>
+					<p>or</p>
+					<button type="button" name="flee" onclick="timeToFlee();">Flee!</button>
+					<p id="instructions">If you choose to fight, you must roll a 9 or higher on the dice or the dragon will roast you!<p>
+					<div id="the-fight">						
+						<img src="img/d1.gif" name="myDie1">
+						<img src="img/d1.gif" name="myDie2">
+						<button type="button" name="throwDice" onclick="throwDice();">Click to Roll Dice</button>				
+					</div>
+					<div id="damage">0</div>
+				</div>
+				<div id="game-field" class="col-xs-8 col-sm-8 col-md-9">
+					<div class="character">		
+						<img src="img/dragon.png" name="whichChar">	
+					</div>
+					<div class="game-footer col-xs-12 col-sm-12 col-md-13">
+						<div id="run-away">You run away like a little girl!</div>
+						<div id="defeated">You have been deafeated by the dragon!</div>
+						<div id="victory">You have slain the Dragon!</div>
+					</div>	
+				</div>		
 		</div>
-
-		<div id="game-field">
-
-			<div class="character">		
-					<img src="img/dragon.png" name="whichChar">						
-			</div>
-
-			<div class="game-footer">
-				<div id="run-away">You run away like a little girl!</div>
-				<div id="defeated">You have been deafeated by the dragon!</div>
-				<div id="victory">You have slain the Dragon!</div>
-				
-			</div>	
-		</div>		
-
-	</div>
-	
+	</div>	
 	<script type="text/javascript" src="scripts.js"></script>
-
 </body>
 </html>
 
